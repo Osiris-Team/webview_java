@@ -30,3 +30,4 @@ __MACOSX
 /webview.dll
 /libwebview.so
 /libwebview.dylib
+/webview2loader.dll
