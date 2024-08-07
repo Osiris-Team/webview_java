@@ -85,7 +85,7 @@ interface WebviewNative extends Library {
 
         // Extract all of the libs.
         for (String lib : libraries) {
-            File target = new File(new File(lib).getName());
+            File target = new File(System.getProperty("user.dir")+"/"+ new File(lib).getName());
             if (target.exists()) {
                 target.delete();
             }
@@ -98,7 +98,7 @@ interface WebviewNative extends Library {
             } catch (Exception e) {
                 if (e.getMessage().contains("used by another")) continue; // Ignore.
 
-                System.err.println("Unable to extract native: " + lib);
+                System.err.println("Unable to extract native: " + lib+" to: "+target);
                 throw e;
             }
 
