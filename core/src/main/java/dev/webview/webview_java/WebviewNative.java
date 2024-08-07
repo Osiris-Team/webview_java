@@ -72,7 +72,7 @@ interface WebviewNative extends Library {
 
             case WINDOWS_NT: {
                 libraries = new String[] {
-//                        "/dev/webview/webview_java/natives/" + Platform.archTarget + "/windows_nt/WebView2Loader.dll",
+                        "/dev/webview/webview_java/natives/" + Platform.archTarget + "/windows_nt/WebView2Loader.dll",
                         "/dev/webview/webview_java/natives/" + Platform.archTarget + "/windows_nt/webview.dll"
                 };
                 break;
